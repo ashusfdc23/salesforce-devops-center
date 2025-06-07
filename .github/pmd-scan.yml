@@ -28,7 +28,7 @@ jobs:
           ./pmd-bin/pmd-bin-6.55.0/bin/run.sh pmd \
             -d force-app \
             -f text \
-            -R .github/PMD/apex-ruleset.xml \
+            -R .github/apex-ruleset.xml \
             > pmd-output/pmd-report.txt
 
       - name: Upload PMD Report
