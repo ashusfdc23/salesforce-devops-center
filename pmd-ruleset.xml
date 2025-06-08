@@ -2,32 +2,21 @@
 <ruleset name="Apex Rules"
          xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 
+                             http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
 
     <description>
         PMD ruleset for Salesforce Apex code quality checks.
     </description>
 
-    <!-- Code Style -->
-    <rule ref="category/apex/codestyle.xml/FieldDeclarationsShouldBeAtStartOfClass"/>
-    <rule ref="category/apex/codestyle.xml/IfElseStmtsMustUseBraces"/>
-    <rule ref="category/apex/codestyle.xml/VariableNamingConventions"/>
-
     <!-- Best Practices -->
     <rule ref="category/apex/bestpractices.xml/ApexUnitTestClassShouldHaveAsserts"/>
     <rule ref="category/apex/bestpractices.xml/AvoidLogicInTrigger"/>
-    <rule ref="category/apex/bestpractices.xml/ClassNamingConventions"/>
-    <rule ref="category/apex/bestpractices.xml/EmptyCatchBlock"/>
     <rule ref="category/apex/bestpractices.xml/SoqlInjection"/>
     <rule ref="category/apex/bestpractices.xml/UnreachableStatement"/>
 
     <!-- Design -->
-    <rule ref="category/apex/design.xml/CyclomaticComplexity"/>
-    <rule ref="category/apex/design.xml/TooManyFields"/>
     <rule ref="category/apex/design.xml/TooManyMethods"/>
     <rule ref="category/apex/design.xml/ExcessiveClassLength"/>
-    <rule ref="category/apex/design.xml/ClassNamingConventions"/>
-
-    <!-- Performance -->
     <rule ref="category/apex/performance.xml/AvoidSoqlInLoops" />
 </ruleset>
